@@ -1,2 +1,2 @@
 # Logistic-Regression
-LR implement
+LR implemented by GD, SGD, SAG, SVRG
