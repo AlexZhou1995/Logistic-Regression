@@ -28,7 +28,7 @@ class LR(object):
 
         self.w = w
 
-    def SGD(self,x,y,n_iters,batch_size,lr=1e-2):
+    def SGD_fit(self,x,y,n_iters,batch_size,lr=1e-2):
         m, d = x.shape
         w = np.random.random([1, d + 1])
         x = np.hstack([x, np.ones([m, 1])])
@@ -132,7 +132,7 @@ lrc.GD_fit(X,Y,10)
 log1 = lrc.log
 
 lrc.reset()
-lrc.SGD(X,Y,10,100)
+lrc.SGD_fit(X,Y,10,100)
 log2 = lrc.log
 
 lrc.reset()
